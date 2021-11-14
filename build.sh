@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-[ "$1" ] || echo 'Usage: ./build.sh [dwm] [st] [dmenu] [slock]' 1>&2
+[ "$1" ] || echo 'Usage: ./build.sh [dwm] [dmenu] [st] [slock]' 1>&2
 
 clone() {
 	[ -d "$1" ] || git clone "$2/$1"
